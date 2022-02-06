@@ -115,7 +115,9 @@ export default class table extends Component {
       <div>
         <div className='table'>
           <div className='tablehead'>
-            <div className='th'>Id</div>
+            <div className='th' id='id'>
+              Id
+            </div>
             <div className='th'>Name</div>
             <div className='th'>Status</div>
             <div className='th'>Adress</div>
@@ -125,7 +127,7 @@ export default class table extends Component {
           <div className='tablebody'>
             {this.state.list.map((value) => (
               <div className='tablecontent'>
-                <div className='th'>{value.id}</div>
+                <div className='th , id'>{value.id}</div>
                 <div className='th'>{value.name}</div>
                 <div className='th'>{value.Status}</div>
                 <div className='th'>{value.adress}</div>

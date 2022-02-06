@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputname{
+  margin-right: 5px;
+}
+
+.divtable{
+  padding: 10px 0px 0px 0px ;
+  font-size: large;
+  
+}
+table{
+  margin: 10px 0px 10px 0px ;
+}
+button{
+  margin-right: 3px;
+}
