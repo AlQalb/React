@@ -113,7 +113,7 @@ export default class table extends Component {
                 <td>
                   <button onClick={() => onDelete(value.id)}>delete</button>
                   {this.state.selected.id === value.id ? (
-                    <button onClick={onUpdate}>save</button>
+                    <button onClick={onUpdate}>update</button>
                   ) : (
                     <button onClick={() => onSelect(value)}>edit</button>
                   )}

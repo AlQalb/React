@@ -9,6 +9,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 2000px;
 }
 .inputname{
   margin-right: 5px;

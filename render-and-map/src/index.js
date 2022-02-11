@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Test from './test';
-import Table from './table';
-import Update from './update';
+
+import Render from './render';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
-    <Table />
-    <Update />
+    <Render />
   </React.StrictMode>,
   document.getElementById('root')
 );

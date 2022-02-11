@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Test from './test';
-import Table from './table';
-import Update from './update';
+import Home from './home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
-    <Table />
-    <Update />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
