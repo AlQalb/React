@@ -10,7 +10,7 @@ export default class mainbanner extends Component {
         <div className='inbanner, inbannertext , '>
           <div>
             <p>Welcome to GreenShop</p>
-            <H1>Let’s Make a Better Planet</H1>
+            <H1  >Let’s Make a Better Planet</H1>
             <p>
               We are an online plant shop offering a wide range of cheap and
               trendy plants. Use our plants to create an unique Urban Jungle.

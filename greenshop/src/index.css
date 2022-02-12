@@ -14,18 +14,23 @@
 
 .navbarbtn {
   margin-left: 30px;
+  cursor: pointer;
+}
+.navbarbtn:active {
+  transform: translateY(1.5px);
 }
 .navbarbtncontainer {
   display: flex;
 }
 .active {
   border-bottom: 3px solid green;
+  transition: all 0.2s;
 }
 .link {
   margin-right: 50px;
   font-family: Cera Pro;
   font-style: normal;
-
+  transition: all 0.2s;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
@@ -37,8 +42,6 @@
   flex-direction: column;
 }
 .inbanner {
-  /* border: 1px solid blue; */
-
   flex: 1;
 }
 .imgbanner {

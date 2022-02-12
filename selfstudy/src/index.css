@@ -1,0 +1,8 @@
+.notactive {
+  color: red;
+  transition: all 0.3s;
+}
+.active {
+  color: green;
+  transition: all 0.3s;
+}
