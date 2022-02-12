@@ -1,8 +1,7 @@
 .notactive {
-  color: red;
   transition: all 0.3s;
 }
 .active {
-  color: green;
+  border-bottom: 4px solid green;
   transition: all 0.3s;
 }
