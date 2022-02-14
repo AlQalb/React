@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Active from './active';
 import Header from './header/header';
+import Mainbanner from './MainBanner/Mainbanner';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Active /> */}
     <Header />
+    <Mainbanner />
   </React.StrictMode>,
   document.getElementById('root')
 );

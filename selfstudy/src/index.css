@@ -8,3 +8,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+  padding: 25px 120px;
+  
+}

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { HContainer, Hmenu } from './style.js';
+import { HContainer, Hmenu,Image } from './style.js';
 import img from './images/Logo.png';
 import search from './images/search.png';
 import carry from './images/carry.png';
 import btn from './images/btn.png';
 import { navbar } from '../mock';
-import GenericButton from '../genericButton/Genericbutton.jsx';
+import GenericButton from '../Components/genericButton/Genericbutton.jsx';
 export default class header extends Component {
   constructor(props) {
     super(props);
