@@ -1,7 +1,10 @@
-.notactive {
-  transition: all 0.3s;
-}
 .active {
-  border-bottom: 4px solid green;
-  transition: all 0.3s;
+  border-bottom: 4px solid #169616;
+  transition: all 0.2s;
+}
+* {
+  font-family: Cera Pro;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }

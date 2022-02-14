@@ -8,13 +8,20 @@ export const HContainer = styled.div`
   border: 1px solid green;
   width: 1200px;
   height: 53px;
-  #kid {
-    margin-right: 50px;
-    cursor: pointer;
-  }
 `;
-export const img = styled.div``;
+
 
 export const Hmenu = styled.div`
   display: flex;
+  #kid {
+    padding-top: 8px;
+    margin-right: 50px;
+    height: 53px;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    :hover {
+      border-bottom: 3px solid #169616;
+    }
+  }
 `;

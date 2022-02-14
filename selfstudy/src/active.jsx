@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {navbar} from './mock'
+import { navbar } from './mock';
 export default class active extends Component {
   constructor(props) {
     super(props);

@@ -66,4 +66,5 @@ export const H1 = styled.div`
   width: 530px;
   height: 140px;
   text-transform: uppercase;
+  
 `;

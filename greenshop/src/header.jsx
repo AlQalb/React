@@ -3,7 +3,7 @@ import { Header, Navbar, Button } from './sytle';
 import logo from './images/Logo.png';
 import { navbar } from './mock';
 import search from './images/search.png';
-import carry from './images/carry.png';
+import shop from './images/carry.png';
 import btn from './images/btn.png';
 export default class header extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ export default class header extends Component {
             height={24}
             width={24}
             className='navbarbtn'
-            src={carry}
+            src={shop}
             alt=''
           />
           <Button className='navbarbtn'>
