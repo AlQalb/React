@@ -2,22 +2,42 @@ import styled from 'styled-components';
 
 export const Banner = styled.div`
   display: flex;
-
+  background: linear-gradient(
+    97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
   width: 100%;
   height: 450px;
   margin-top: 12px;
   padding: 20px 40px;
-
 `;
 Banner.Left = styled.div`
-  border: 2px solid red;
   padding-top: 68px;
   flex: 1;
 `;
 Banner.Right = styled.div`
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding-top: 68px;
   flex: 1;
+  position: relative;
+  #firstimg {
+    position: absolute;
+    left: 96px;
+    top: 259px;
+    width: 135px;
+    height: 135px;
+  }
+  #twiceimg {
+    position: absolute;
+    left: 55px;
+    top: -49px;
+    width: 486px;
+    height: 476px;
+  }
 `;
 
 Banner.Planet = styled.span`

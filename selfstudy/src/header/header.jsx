@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HContainer, Hmenu,Image } from './style.js';
+import { HContainer, Hmenu } from './style.js';
 import img from './images/Logo.png';
 import search from './images/search.png';
 import carry from './images/carry.png';
@@ -9,7 +9,7 @@ import GenericButton from '../Components/genericButton/Genericbutton.jsx';
 export default class header extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: '' };
+    this.state = { active: false };
   }
   render() {
     return (
@@ -20,7 +20,7 @@ export default class header extends Component {
           {navbar.map(({ id, title }) => (
             <div
               id='kid'
-              onClick={() => this.setState({ active: title })}
+              onClick={() => this.setState({ active: !true })}
               className={`notactive ${this.state.active === title && `active`}`}
             >
               {title}

@@ -20,11 +20,12 @@ export default class Mainbanner extends Component {
             Order your favorite plants!
           </Banner.Tekst>
           <GenericButton mrtop={44} height='40' bg={'#46A358'} width='140'>
-            Shop Now
+            SHOP NOW
           </GenericButton>
         </Banner.Left>
         <Banner.Right>
-          <img src={Img} alt='img' />
+          <img id='firstimg' src={Img} alt='img' />
+          <img id='twiceimg' src={Img} alt='img' />
         </Banner.Right>
       </Banner>
     );
