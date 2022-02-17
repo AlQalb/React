@@ -1,7 +1,4 @@
-.active {
-  border-bottom: 4px solid #169616;
-  transition: all 0.2s;
-}
+
 * {
   font-family: Cera Pro;
   padding: 0px;
@@ -10,6 +7,6 @@
 }
 
 body {
-  width: 100%;
+  width: 1440px;
   padding: 25px 120px;
 }

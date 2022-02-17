@@ -9,7 +9,7 @@ import GenericButton from '../Components/genericButton/Genericbutton.jsx';
 export default class header extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: false };
+    this.state = { active: 'Home' };
   }
   render() {
     return (
@@ -20,8 +20,8 @@ export default class header extends Component {
           {navbar.map(({ id, title }) => (
             <div
               id='kid'
-              onClick={() => this.setState({ active: !true })}
-              className={`notactive ${this.state.active === title && `active`}`}
+              onClick={() => this.setState({ active: title })}
+              className={`notactive ${this.state.active === title && 'active'}`}
             >
               {title}
             </div>

@@ -20,13 +20,19 @@ export const categories = [
 ];
 
 export const card = [
+  { id: 1, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 2, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 3, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 4, title: 'Hous Plants', price: 100, number: 150, src: img },
-  { id: 1, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 5, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 6, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 7, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 8, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 9, title: 'Hous Plants', price: 100, number: 150, src: img },
+];
+
+export const sortcat = [
+  { id: 1, title: 'All Plants' },
+  { id: 2, title: 'New Arrivals' },
+  { id: 3, title: 'Sale' },
 ];
