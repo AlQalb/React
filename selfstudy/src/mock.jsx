@@ -36,3 +36,9 @@ export const sortcat = [
   { id: 2, title: 'New Arrivals' },
   { id: 3, title: 'Sale' },
 ];
+
+export const size = [
+  { id: 1, title: 'Small', number: 119 },
+  { id: 2, title: 'Medium', number: 89 },
+  { id: 3, title: 'Large', number: 78 },
+];

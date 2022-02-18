@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { card, sortcat } from '../mock';
+import { card, sortcat, size } from '../mock';
+import saleimg from '../images/Sale.jpg';
+import CardFlower from '../Components/Card/Card';
 import {
   Container,
-  Card,
-  Image,
-  Searchicon,
-  Hearticon,
-  Shopicon,
   Sort,
   Herohome,
   Sortby,
@@ -15,6 +12,8 @@ import {
   Select,
   PriceRange,
   Input,
+  Size,
+  Saleimg,
 } from './styled ';
 import GreenTitle from '../Components/greenTitle/GreenTitle';
 import GenericButton from '../Components/genericButton/Genericbutton';
@@ -25,8 +24,10 @@ export default class Hero extends Component {
     this.state = {
       active: 1,
       activee: 1,
+      activeee: 1,
       data: card,
       sortmenu: sortcat,
+      sizemenu: size,
     };
   }
 
@@ -57,7 +58,21 @@ export default class Hero extends Component {
               </GenericButton>
             </PriceRange.Range>
           </PriceRange>
+          <Size>
+            <h3>Size</h3>
+            {this.state.sizemenu.map(({ id, title, number }) => (
+              <Size.Menu
+                onClick={() => this.setState({ active: id })}
+                className={` ${this.state.active === id && 'activeee'}`}
+              >
+                <div>{title}</div>
+                <div>({number})</div>
+              </Size.Menu>
+            ))}
+          </Size>
+          <Saleimg src={saleimg} />
         </Filter>
+
         <Sort>
           <Sortby>
             <Sortby.Left>
@@ -83,16 +98,7 @@ export default class Hero extends Component {
 
           <Container>
             {this.state.data.map((value) => (
-              <Card>
-                <Image src={value.src} />
-                <Card.Group className='group'>
-                  <Shopicon />
-                  <Searchicon />
-                  <Hearticon />
-                </Card.Group>
-                <h4>{value.title} </h4>
-                <GreenTitle>{value.price}$</GreenTitle>
-              </Card>
+              <CardFlower value={value} />
             ))}
           </Container>
         </Sort>
