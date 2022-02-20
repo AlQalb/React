@@ -20,7 +20,15 @@ export const categories = [
 ];
 
 export const card = [
-  { id: 1, title: 'Hous Plants', price: 100, number: 150, src: img },
+  {
+    id: 1,
+    title: 'Hous Plants',
+    price: 100,
+    description:
+      'The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.',
+    number: 150,
+    src: img,
+  },
   { id: 2, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 3, title: 'Hous Plants', price: 100, number: 150, src: img },
   { id: 4, title: 'Hous Plants', price: 100, number: 150, src: img },

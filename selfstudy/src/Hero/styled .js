@@ -10,6 +10,9 @@ export const Herohome = styled.div`
 export const Sort = styled.div`
   flex: 1;
   width: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `;
 export const Sortby = styled.div`
   display: flex;
@@ -144,4 +147,34 @@ export const Container = styled.div`
 export const Saleimg = styled.img`
   width: 310px;
   height: 470px;
+`;
+
+export const Pagenumber = styled.div`
+  margin-top: 90px;
+  display: flex;
+  width: 215px;
+  height: 35px;
+  .activee {
+    background-color: #169616;
+    transition: all 0.2s;
+    color: white;
+    border: 0px;
+  }
+  .Next {
+    :active {
+      background-color: #169616;
+      color: white;
+    }
+  }
+`;
+Pagenumber.Number = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
 `;

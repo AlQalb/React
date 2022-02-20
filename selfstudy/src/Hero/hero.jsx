@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { card, sortcat, size } from '../mock';
+import { card, sortcat, size, navbar } from '../mock';
 import saleimg from '../images/Sale.jpg';
 import CardFlower from '../Components/Card/Card';
 import {
@@ -14,6 +14,7 @@ import {
   Input,
   Size,
   Saleimg,
+  Pagenumber,
 } from './styled ';
 import GreenTitle from '../Components/greenTitle/GreenTitle';
 import GenericButton from '../Components/genericButton/Genericbutton';
@@ -25,9 +26,11 @@ export default class Hero extends Component {
       active: 1,
       activee: 1,
       activeee: 1,
+      activenumber: 1,
       data: card,
       sortmenu: sortcat,
       sizemenu: size,
+      number: navbar,
     };
   }
 
@@ -101,6 +104,17 @@ export default class Hero extends Component {
               <CardFlower value={value} />
             ))}
           </Container>
+          <Pagenumber>
+            {this.state.number.map(({ id }) => (
+              <Pagenumber.Number
+                onClick={() => this.setState({ activenumber: id })}
+                className={` ${this.state.activenumber === id && 'activee'}`}
+              >
+                {id}
+              </Pagenumber.Number>
+            ))}
+            <Pagenumber.Number className={'Next'}>{'<'}</Pagenumber.Number>
+          </Pagenumber>
         </Sort>
       </Herohome>
     );

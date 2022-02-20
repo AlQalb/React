@@ -11,7 +11,7 @@ export default class Mainbanner extends Component {
           <Banner.Welcome>Welcome to GreenShop</Banner.Welcome>
 
           <Banner.Lets>
-            Let’s Make a Better <GreenTitle>Planet</GreenTitle>
+            Lets Make a Better <GreenTitle>Planet</GreenTitle>
           </Banner.Lets>
 
           <Banner.Tekst>
