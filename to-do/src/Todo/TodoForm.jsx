@@ -13,11 +13,11 @@ function TodoForm({ addTask }) {
     setUserInput('');
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSubmit(e);
-    }
-  };
+  // const handleKeyPress = (e) => {
+  //   if (e.key === 'Enter') {
+  //     handleSubmit(e);
+  //   }
+  // };
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -25,7 +25,7 @@ function TodoForm({ addTask }) {
         value={userInput}
         type='text'
         onChange={handleChange}
-        onKeyDown={handleKeyPress}
+        // onKeyDown={handleKeyPress}
         placeholder='Topshiriqni kirgizing...'
       />
       <Button>
