@@ -11,7 +11,6 @@ function Form({ addTask }) {
     addTask(inputValue);
     setInputValue('');
   };
-  console.log(inputValue);
   return (
     <form onSubmit={handleSubmit}>
       <input
