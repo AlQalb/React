@@ -42,13 +42,19 @@ function Root() {
     setTodos(newTask);
     setSelectedId(null);
   };
-
+  const handleToggle = (id) => {
+    setTodos([
+      ...todos.map((todo) =>
+        todo.id === id ? { ...todo, complete: !todo.complete } : { ...todo }
+      ),
+    ]);
+  };
   const onDelete = (id) => {
     setTodos([...todos.filter((value) => value.id !== id)]);
   };
   return (
     <Container>
-      <h5>Todo List</h5>
+      <h4>Todo List</h4>
       {/* <p>{new Date().getHours() }</p> */}
       <Form addTask={addTask} />
 
@@ -62,6 +68,7 @@ function Root() {
             onEdit={onEdit}
             onDelete={onDelete}
             onSelect={onSelect}
+            toggleTask={handleToggle}
           />
         );
       })}

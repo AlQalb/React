@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Button, Formbar, Input } from './styled';
 function Form({ addTask }) {
   const [inputValue, setInputValue] = useState('');
   const onChange = (e) => {
@@ -12,15 +12,15 @@ function Form({ addTask }) {
     setInputValue('');
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <Formbar onSubmit={handleSubmit}>
+      <Input
         type='text'
         onChange={onChange}
         value={inputValue}
         placeholder='add the to do'
       />
-      <button>add</button>
-    </form>
+      <Button>add</Button>
+    </Formbar>
   );
 }
 
