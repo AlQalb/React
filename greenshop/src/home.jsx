@@ -6,7 +6,21 @@ export default class home extends Component {
     return (
       <div className='home'>
         <Header />
+        <Header />
+        <Header />
+        <Header />
+        <Header />
+        <Header />
+        <Header />
+        <Header />
+        <Header />
         <Mainbanner />
+        <Mainbanner />
+        <Mainbanner />
+        <Mainbanner />
+        <Mainbanner />
+        <Mainbanner />
+        
       </div>
     );
   }
